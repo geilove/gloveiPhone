@@ -9,12 +9,12 @@
 /* Begin PBXBuildFile section */
 		CB860D3D1C0C51D2000A7A76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D3C1C0C51D2000A7A76 /* main.m */; };
 		CB860D401C0C51D2000A7A76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D3F1C0C51D2000A7A76 /* AppDelegate.m */; };
-		CB860D431C0C51D2000A7A76 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D421C0C51D2000A7A76 /* ViewController.m */; };
 		CB860D461C0C51D2000A7A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB860D441C0C51D2000A7A76 /* Main.storyboard */; };
 		CB860D481C0C51D2000A7A76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB860D471C0C51D2000A7A76 /* Assets.xcassets */; };
 		CB860D4B1C0C51D2000A7A76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB860D491C0C51D2000A7A76 /* LaunchScreen.storyboard */; };
 		CB860D561C0C51D2000A7A76 /* gloveiPhoneTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D551C0C51D2000A7A76 /* gloveiPhoneTests.m */; };
 		CB860D611C0C51D2000A7A76 /* gloveiPhoneUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D601C0C51D2000A7A76 /* gloveiPhoneUITests.m */; };
+		CB860D7C1C0C5D5D000A7A76 /* UserLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D7B1C0C5D5D000A7A76 /* UserLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +39,6 @@
 		CB860D3C1C0C51D2000A7A76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB860D3E1C0C51D2000A7A76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		CB860D3F1C0C51D2000A7A76 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		CB860D411C0C51D2000A7A76 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		CB860D421C0C51D2000A7A76 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		CB860D451C0C51D2000A7A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB860D471C0C51D2000A7A76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB860D4A1C0C51D2000A7A76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +49,8 @@
 		CB860D5C1C0C51D2000A7A76 /* gloveiPhoneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gloveiPhoneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB860D601C0C51D2000A7A76 /* gloveiPhoneUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = gloveiPhoneUITests.m; sourceTree = "<group>"; };
 		CB860D621C0C51D2000A7A76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB860D7A1C0C5D5D000A7A76 /* UserLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserLoginViewController.h; sourceTree = "<group>"; };
+		CB860D7B1C0C5D5D000A7A76 /* UserLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +101,9 @@
 		CB860D3A1C0C51D2000A7A76 /* gloveiPhone */ = {
 			isa = PBXGroup;
 			children = (
+				CB860D791C0C5D32000A7A76 /* loginRegister */,
 				CB860D3E1C0C51D2000A7A76 /* AppDelegate.h */,
 				CB860D3F1C0C51D2000A7A76 /* AppDelegate.m */,
-				CB860D411C0C51D2000A7A76 /* ViewController.h */,
-				CB860D421C0C51D2000A7A76 /* ViewController.m */,
 				CB860D441C0C51D2000A7A76 /* Main.storyboard */,
 				CB860D471C0C51D2000A7A76 /* Assets.xcassets */,
 				CB860D491C0C51D2000A7A76 /* LaunchScreen.storyboard */,
@@ -138,6 +137,15 @@
 				CB860D621C0C51D2000A7A76 /* Info.plist */,
 			);
 			path = gloveiPhoneUITests;
+			sourceTree = "<group>";
+		};
+		CB860D791C0C5D32000A7A76 /* loginRegister */ = {
+			isa = PBXGroup;
+			children = (
+				CB860D7A1C0C5D5D000A7A76 /* UserLoginViewController.h */,
+				CB860D7B1C0C5D5D000A7A76 /* UserLoginViewController.m */,
+			);
+			name = loginRegister;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,9 +281,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB860D431C0C51D2000A7A76 /* ViewController.m in Sources */,
 				CB860D401C0C51D2000A7A76 /* AppDelegate.m in Sources */,
 				CB860D3D1C0C51D2000A7A76 /* main.m in Sources */,
+				CB860D7C1C0C5D5D000A7A76 /* UserLoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

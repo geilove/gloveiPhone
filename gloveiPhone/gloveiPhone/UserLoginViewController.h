@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  UserLoginViewController.h
 //  gloveiPhone
 //
 //  Created by 艾海涛 on 30/11/2015.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface UserLoginViewController : UIViewController
 
 @end
-
