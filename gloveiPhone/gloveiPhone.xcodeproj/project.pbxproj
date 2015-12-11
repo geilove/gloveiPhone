@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB14CDAF1C1AE711004002E7 /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB14CDAE1C1AE711004002E7 /* TweetCell.m */; };
 		CB860D3D1C0C51D2000A7A76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D3C1C0C51D2000A7A76 /* main.m */; };
 		CB860D401C0C51D2000A7A76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D3F1C0C51D2000A7A76 /* AppDelegate.m */; };
 		CB860D461C0C51D2000A7A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB860D441C0C51D2000A7A76 /* Main.storyboard */; };
@@ -67,6 +68,7 @@
 		CB860DE81C0C6DB9000A7A76 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB860DB51C0C6DB9000A7A76 /* 8.jpg */; };
 		CB860DE91C0C6DB9000A7A76 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CB860DB61C0C6DB9000A7A76 /* 9.jpg */; };
 		CB95DA451C0C85E0003867AD /* TweetTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CB95DA441C0C85E0003867AD /* TweetTableViewController.m */; };
+		CBDCCCF61C0F46180002F1EF /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBDCCCF51C0F46180002F1EF /* TabBarViewController.m */; };
 		D7F5018F71FE51BCD6117816 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CB89003CC963453BE4187C58 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +91,8 @@
 
 /* Begin PBXFileReference section */
 		4A3DE11E6B752F9F70C741F9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CB14CDAD1C1AE711004002E7 /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
+		CB14CDAE1C1AE711004002E7 /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
 		CB860D381C0C51D2000A7A76 /* gloveiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gloveiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB860D3C1C0C51D2000A7A76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB860D3E1C0C51D2000A7A76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -159,6 +163,8 @@
 		CB89003CC963453BE4187C58 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB95DA431C0C85E0003867AD /* TweetTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetTableViewController.h; sourceTree = "<group>"; };
 		CB95DA441C0C85E0003867AD /* TweetTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetTableViewController.m; sourceTree = "<group>"; };
+		CBDCCCF41C0F46180002F1EF /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarViewController.h; sourceTree = "<group>"; };
+		CBDCCCF51C0F46180002F1EF /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabBarViewController.m; sourceTree = "<group>"; };
 		D16AA073034409E7B9D0C871 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -228,6 +234,8 @@
 				CB860D3E1C0C51D2000A7A76 /* AppDelegate.h */,
 				CB860D3F1C0C51D2000A7A76 /* AppDelegate.m */,
 				CB860D441C0C51D2000A7A76 /* Main.storyboard */,
+				CBDCCCF41C0F46180002F1EF /* TabBarViewController.h */,
+				CBDCCCF51C0F46180002F1EF /* TabBarViewController.m */,
 				CB860D471C0C51D2000A7A76 /* Assets.xcassets */,
 				CB860D491C0C51D2000A7A76 /* LaunchScreen.storyboard */,
 				CB860D4C1C0C51D2000A7A76 /* Info.plist */,
@@ -341,6 +349,8 @@
 			isa = PBXGroup;
 			children = (
 				CB95DA431C0C85E0003867AD /* TweetTableViewController.h */,
+				CB14CDAD1C1AE711004002E7 /* TweetCell.h */,
+				CB14CDAE1C1AE711004002E7 /* TweetCell.m */,
 				CB95DA441C0C85E0003867AD /* TweetTableViewController.m */,
 			);
 			name = tweet;
@@ -589,8 +599,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBDCCCF61C0F46180002F1EF /* TabBarViewController.m in Sources */,
 				CB860D401C0C51D2000A7A76 /* AppDelegate.m in Sources */,
 				CB95DA451C0C85E0003867AD /* TweetTableViewController.m in Sources */,
+				CB14CDAF1C1AE711004002E7 /* TweetCell.m in Sources */,
 				CB860D3D1C0C51D2000A7A76 /* main.m in Sources */,
 				CB860D7C1C0C5D5D000A7A76 /* UserLoginViewController.m in Sources */,
 			);
