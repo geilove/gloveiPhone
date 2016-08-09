@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CB14CDAF1C1AE711004002E7 /* TweetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CB14CDAE1C1AE711004002E7 /* TweetCell.m */; };
 		CB860D3D1C0C51D2000A7A76 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D3C1C0C51D2000A7A76 /* main.m */; };
 		CB860D401C0C51D2000A7A76 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB860D3F1C0C51D2000A7A76 /* AppDelegate.m */; };
 		CB860D461C0C51D2000A7A76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB860D441C0C51D2000A7A76 /* Main.storyboard */; };
@@ -91,8 +90,6 @@
 
 /* Begin PBXFileReference section */
 		4A3DE11E6B752F9F70C741F9 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		CB14CDAD1C1AE711004002E7 /* TweetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetCell.h; sourceTree = "<group>"; };
-		CB14CDAE1C1AE711004002E7 /* TweetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetCell.m; sourceTree = "<group>"; };
 		CB860D381C0C51D2000A7A76 /* gloveiPhone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gloveiPhone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB860D3C1C0C51D2000A7A76 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB860D3E1C0C51D2000A7A76 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -349,8 +346,6 @@
 			isa = PBXGroup;
 			children = (
 				CB95DA431C0C85E0003867AD /* TweetTableViewController.h */,
-				CB14CDAD1C1AE711004002E7 /* TweetCell.h */,
-				CB14CDAE1C1AE711004002E7 /* TweetCell.m */,
 				CB95DA441C0C85E0003867AD /* TweetTableViewController.m */,
 			);
 			name = tweet;
@@ -434,7 +429,7 @@
 				TargetAttributes = {
 					CB860D371C0C51D2000A7A76 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = ZG2YJ6HJ8D;
+						DevelopmentTeam = T6S9H8K5V4;
 					};
 					CB860D501C0C51D2000A7A76 = {
 						CreatedOnToolsVersion = 7.1.1;
@@ -602,7 +597,6 @@
 				CBDCCCF61C0F46180002F1EF /* TabBarViewController.m in Sources */,
 				CB860D401C0C51D2000A7A76 /* AppDelegate.m in Sources */,
 				CB95DA451C0C85E0003867AD /* TweetTableViewController.m in Sources */,
-				CB14CDAF1C1AE711004002E7 /* TweetCell.m in Sources */,
 				CB860D3D1C0C51D2000A7A76 /* main.m in Sources */,
 				CB860D7C1C0C5D5D000A7A76 /* UserLoginViewController.m in Sources */,
 			);
@@ -744,10 +738,13 @@
 			baseConfigurationReference = D16AA073034409E7B9D0C871 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = gloveiPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.geilove.gloveiPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -756,10 +753,13 @@
 			baseConfigurationReference = 4A3DE11E6B752F9F70C741F9 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = gloveiPhone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = org.geilove.gloveiPhone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

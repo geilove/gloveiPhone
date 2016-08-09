@@ -1,0 +1,5 @@
+platform:ios,‘8.4’
+pod'AFNetworking','~> 2.6.0'
+pod'YYKit','~> 0.9.4'
+
+

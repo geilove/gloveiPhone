@@ -8,8 +8,10 @@
 
 #import "UserLoginViewController.h"
 #import "AFHTTPRequestOperationManager.h"
+#import<QuartzCore/QuartzCore.h>
 @interface UserLoginViewController ()
 
+@property (weak, nonatomic) IBOutlet UIImageView *userPhoto;
 @property (weak, nonatomic) IBOutlet UITextField *userEmail;
 
 @property (weak, nonatomic) IBOutlet UITextField *userPassword;
@@ -24,7 +26,50 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    NSLog(@"你哈");
+    //[self setDefaultEmail:@"邮箱最大不超过32位"];
+    //[self setDefaultPassword:@"6-16位字母数字特殊字符组成"];
+    userEmail.textColor=[UIColor redColor];
+    userEmail.backgroundColor=[UIColor whiteColor];
+    userEmail.borderStyle = UITextBorderStyleRoundedRect;
+    userEmail.clearButtonMode = UITextFieldViewModeAlways;
+    userEmail.layer.cornerRadius = 3.0;
+    
+    self.view.userInteractionEnabled = YES;
+    
+    UITapGestureRecognizer *singleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(fingerTapped:)];
+    
+    [self.view addGestureRecognizer:singleTap];
+    userPassword.delegate=self;
+    userEmail.delegate=self;
+   
+}
+-(void)setDefaultEmail:(NSString*)str
+{
+    userEmail.text=str;
+}
+-(void)setDefaultPassword:(NSString*)str
+{
+    userPassword.text=str;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [self.userEmail resignFirstResponder];
+    [self.userPassword resignFirstResponder];
+}
+
+-(BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    [textField resignFirstResponder];
+    return YES;
+}
+
+-(void)fingerTapped:(UITapGestureRecognizer *)gestureRecognizer
+
+{
+    
+    [self.view endEditing:YES];
+    
 }
 
 - (IBAction)loginAction:(id)sender {
@@ -86,7 +131,7 @@
              //为了确保数据持久化
              [[NSUserDefaults standardUserDefaults] synchronize];
              //接下来，程序条件跳转到主页（包含各种项目基金等的页面），好像又得查找资料了
-             [self performSegueWithIdentifier:@"loginToMain" sender:nil];
+             [self performSegueWithIdentifier:@"d" sender:nil];
              
              
              
